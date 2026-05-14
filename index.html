@@ -742,7 +742,7 @@
 <script>
   // ─── DATA ───
   function getSettings() {
-    try { return JSON.parse(localStorage.getItem('dough_settings')) || { stampTarget: 8, cooldownHours: 20 }; } catch(e) { return { stampTarget: 8, cooldownHours: 20 }; }
+    try { return JSON.parse(localStorage.getItem('dough_settings')) || { stampTarget: 10, cooldownHours: 20 }; } catch(e) { return { stampTarget: 10, cooldownHours: 20 }; }
   }
   function saveSettings(s) { localStorage.setItem('dough_settings', JSON.stringify(s)); }
 
